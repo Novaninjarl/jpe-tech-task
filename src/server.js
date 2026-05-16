@@ -73,7 +73,7 @@ app.get("/api/config", (req, res) => {
     appName,
     environment,
     port,
-    debug: true
+    debug: environment !== "production"
   });
 });
 
